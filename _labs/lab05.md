@@ -70,7 +70,7 @@ You are finished when all the tests pass.
 
 There is only one file that you need to edit this week: 
 
-* <code>moreArrayFuncs.cpp</code> contains more functions that deal with arrays. These are in addition to the arrayFuncs.cpp that you worked with before in {{page.prev_odds_and_primes_lab}}.
+* <code>moreArrayFuncs.cpp</code> contains more functions that deal with arrays. These are in addition to the `arrayFuncs.cpp` that you worked with before in {{ page.prev_odds_and_primes_lab }}.
 
 ### Step 3b: Work on the array functions
 
