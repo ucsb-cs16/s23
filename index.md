@@ -13,7 +13,7 @@ description: "CMPSC 16 for Winter 2023 (Conrad)"
 
 # CMPSC 16, Winter 2023
 
-# Office Hours
+# Class & Office Hours
 
 * For office hours held in 3525, 3526 or 2510, these refer to rooms in Phelps Hall.
 * For online office hours, the zoom room link is on the Canvas site for the course
