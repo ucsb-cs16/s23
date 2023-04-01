@@ -11,7 +11,7 @@ description: "CMPSC 16 for Spring 2023 (Vaishali)"
 </style>
 
 
-# CMPSC 16, Winter 2023
+# CMPSC 16, Spring 2023
 
 # Class & Office Hours
 
