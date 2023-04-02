@@ -2,29 +2,31 @@
 title: Week 3
 topic: Loops (part 2) / Arrays / Vectors
 ---
-Sun, Jan 22
+Sun, Apr 16
 : Start: **PA03**{: .label .label-orange }, **CA03**{: .label .label-blue }
 
 
-Mon, Jan 23
+Mon, Apr 17
+: 12:30pm **Class**{: .label .label-purple }
+
+
+Tue, Apr 18
 : [](#)
 
-Tue, Jan 24
-: 02:00pm **Class**{: .label .label-purple }
+
+Wed, Apr 19
+: 02:00pm **Class**{: .label .label-purple } 
 : **11:59pm**  ⏰  Due: **LA02**{: .label .label-green }
 
-Wed, Jan 25
+
+Thu, Apr 20
 : **Lab sections**{: .label .label-purple }
 
 
-Thu, Jan 26
-: 02:00pm **Class**{: .label .label-purple } 
-
-
-Fri, Jan 27
+Fri, Apr 21
 : [](#)
 
-Sat, Jan 28
+Sat, Apr 22
 : **11:59pm**  ⏰  Due: **PA03**{: .label .label-orange }, **CA03**{: .label .label-blue }
 
 
