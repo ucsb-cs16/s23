@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "UCSB CS16 W23"
+title: "UCSB CS16 S23"
 layout: default
 nav_order: 0
 description: "CMPSC 16 for Spring 2023 (Vaishali)"
