@@ -24,7 +24,7 @@ Thu, Apr 27
 
 
 Fri, Apr 28
-: [](#)
+: <p class="text-grey-dk-000 mb-0"><em>Deadline to Drop Courses</em></p>
 
 Sat, Apr 29
 : **11:59pm**  ⏰  Due: **PA04**{: .label .label-orange }, **CA04**{: .label .label-blue }
