@@ -16,7 +16,7 @@ Tue, Apr 11
 
 
 Wed, Apr 12
-: 02:00pm **Class**{: .label .label-purple } 
+: 12:30pm **Class**{: .label .label-purple } 
 : **11:59pm**  ⏰  Due: **LA01**{: .label .label-green }
 
 
