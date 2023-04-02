@@ -2,32 +2,31 @@
 title: Week 10
 topic: Pointers, Part 2
 ---
-Sun, Mar 12
+Sun, June 4
 : Start: **PA10**{: .label .label-orange }, **CA10**{: .label .label-blue }
 
 
-Mon, Mar 13
+Mon, June 5
+: 12:30pm **Class**{: .label .label-purple } 
+
+
+Tue, June 6
 : [](#)
 
-Tue, Mar 14
-: 02:00pm **Class**{: .label .label-purple }
+
+Wed, June 7
+: 12:30pm **Class**{: .label .label-purple } 
 : **11:59pm**  ⏰  Due: **LA09**{: .label .label-green }
 
 
-Wed, Mar 15
+Thu, June 8
 : **Lab sections**{: .label .label-purple }
 
 
-Thu, Mar 16
-: 02:00pm **Class**{: .label .label-purple } 
+Fri, June 9
+: [](#)
 
-
-Fri, Mar 17
-: <p class="text-grey-dk-000 mb-0"><em>Instruction Ends</em></p>
-
-
-
-Sat, Mar 18
+Sat, June 10
 : **11:59pm**  ⏰  Due: **PA10**{: .label .label-orange }, **CA10**{: .label .label-blue }
 
 
