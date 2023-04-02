@@ -19,22 +19,18 @@ You must contact the instructor for clarification if you receive information fro
 
 ## Grade breakdown by evaluation component
 
-* zyBooks Assignments: 25% 
-* Gradescope assignments: 25%
+* ZyBooks Activities: 25% 
+* Gradescope/Lab Assignments: 25%
 * Midterm Exam: 25%
 * Final Examination : 25%
 
 Letter Grades:
 
-* To earn a grade of A, you must an A average overall, AND 
-  - an A average in each of the four components OR 
-  - your final overall average must be in the top 33% of the class
-* To earn a grade of A-, you must have at least an A- average, AND
-  - at least a B- average in each of the four components OR 
-  - your final overall average must be in the top 50% of the class
+* To earn a grade of A, you must have an A average overall, and **in each of the components**. 
+* To earn a grade of A-, you must have at least an A- overall, and **at least a B- average in each of the components**.
 * To earn a grade of B+, you must have at least an B+ average overall, and **at least a C+ average in  each of the components**.
 * To earn a grade of B, you must have at least an B+ average overall, and **at least a C average in  each of the components**.
-* To earn a grade of B-, you must have at least an B- average overall, and **at least a C- average  each of the components**.
+* To earn a grade of B-, you must have at least an B- average overall, and **at least a C- average  in each of the components**.
 * To earn a grade of C, C-, D+, D or D- you need only to have that letter grade average overall (no additional criteria apply).
 
 ## Grade assignment policy
@@ -198,23 +194,17 @@ be comfortable with all of the following:</p>
 
 <p>There are five components to this course, each of which has a special job to do:</p>
 <ul>
-  <li><strong>(1) Reading</strong>—Between each class, you'll have reading to do in the textbook. There is too much information you need to learn in this course for you to get all of it in lecture, so the readings are essential.  I'll be updating the zyBook so that the readings for each week are clearly labelled with the week in which they should be completed.<br />
+  <li><strong>(1) Reading</strong>—Between each class, you'll have reading to do in the textbook. There is too much information you need to learn in this course for you to get all of it in lecture, so the readings are essential.  We'll be updating the zyBook so that the readings for each week are clearly labelled with the week in which they should be completed.<br />
     <br />
   </li>
   <li><strong>(2) zyBooks PAs/CAs/LAs</strong>
 
-    <br />The PAs/CAs/LAs in zyBooks are there to help make sure that you understood the reading, and to give you immediate practice with what you are reading.  The PAs/CAs/LAs for each
-    week should be completed by the end of that week.  There isn't 
-    a late penalty for falling behind, but if you fall behind,
-    you may find that your scores
-    are not updated in Canvas as promptly, and more importantly,
-    you may find it difficult to catch up as the material gets more
-    challenging. 
+    <br />The PAs/CAs/LAs in zyBooks are there to help make sure that you understood the reading, and to give you immediate practice with what you are reading.  The PAs/CAs/LAs for each week should be completed by the end of that week. 
     <br />
 <br />
   </li>
 
-  <li><strong>(3) Programming Assignments (Labs)</strong>—Programming assignments (also called labs) are given once a week, and are typically assigned every Wednesday in your lab
+  <li><strong>(3) Programming Assignments (Labs)</strong>—Programming assignments (also called labs) are given once a week, and are typically assigned every Thursday in your lab
   sessions. You may work on them during closed labs and plan to finish the assignment on your own time outside of lab. You should however, read the assignment and attempt the parts that you *can* do with little assistance as soon as the assignment is released. The assumption is that you at the very least read the assignment during your lab section. When permitted, you are encouraged to use pair programming, but please read the collaboration policy for each lab. Some labs have to be completed individually.<br />
     <br />
   </li>
