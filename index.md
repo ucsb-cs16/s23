@@ -13,7 +13,7 @@ description: "CMPSC 16 for Spring 2023 (Vaishali)"
 
 # CMPSC 16, Spring 2023
 
-# Class & Office Hours
+# Class, Section & Office Hours
 
 * For office hours held in 3525, 3526 or 2510, these refer to rooms in Phelps Hall.
 * For online office hours, the zoom room link is on the Canvas site for the course
