@@ -2,26 +2,26 @@
 title: Finals Week
 topic: ""
 ---
-Sun, Mar 19
+Sun, June 11
 : [](#)
 
-Mon, Mar 20
+Mon, June 12
 : [](#)
 
-Tue, Mar 21
-: 4:00pm - 7:00pm **Final Exam**{: .label .label-red } LSB 1001 (normal lecture room)
+Tue, June 13
+: 12:00pm - 3:00pm **Final Exam**{: .label .label-red } IV Theatre 2 (normal lecture room)
 
 
-Wed, Mar 22
-: [](#)
-
-
-Thu, Mar 23
+Wed, June 14
 : [](#)
 
 
-Fri, Mar 23
+Thu, June 15
 : [](#)
 
-Sat, Mar 25
+
+Fri, June 16
+: [](#)
+
+Sat, June 17
 : [](#)
