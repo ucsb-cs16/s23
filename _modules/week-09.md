@@ -2,30 +2,31 @@
 title: Week 9
 topic: "Classes, Part 2: Constructors"
 ---
-Sun, Mar 5
+Sun, May 28
 : Start: **PA09**{: .label .label-orange }, **CA09**{: .label .label-blue }
 
 
-Mon, Mar 6
+Mon, May 29
+: **Holiday (no classes)**{: .label .label-red }**Memorial Day**
+
+
+Tue, May 30
 : [](#)
 
-Tue, Mar 7
-: 02:00pm **Class**{: .label .label-purple }
+
+Wed, May 31
+: 12:30pm **Class**{: .label .label-purple } 
 : **11:59pm**  ⏰  Due: **LA08**{: .label .label-green }
 
 
-Wed, Mar 8
+Thu, June 1
 : **Lab sections**{: .label .label-purple }
 
 
-Thu, Mar 9
-: 02:00pm **Class**{: .label .label-purple } 
-
-
-Fri, Mar 10
+Fri, June 2
 : [](#)
 
-Sat, Mar 11
+Sat, June 3
 : **11:59pm**  ⏰  Due: **PA09**{: .label .label-orange }, **CA09**{: .label .label-blue }
 
 
