@@ -15,7 +15,7 @@ Tue, Apr 18
 
 
 Wed, Apr 19
-: 02:00pm **Class**{: .label .label-purple } 
+: 12:30pm **Class**{: .label .label-purple } 
 : **11:59pm**  ⏰  Due: **LA02**{: .label .label-green }
 
 
