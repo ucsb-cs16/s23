@@ -5,4 +5,5 @@ pronouns: she/her
 photo: 404.png
 ---
 
-Vaishali Surianarayanan is the instructor for this course.  (Add more bio details here later.)
+Vaishali Surianarayanan is the instructor for this course. She is a fourth year PhD candidate in the CS Theory Lab. 
+She loves to teach. In her free time you can find her singing or painting.  
