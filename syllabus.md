@@ -85,7 +85,9 @@ Letter Grades:
 
 ## Required Resources
 
-The zyBook for this course is required.  Information can be found at the [textbook](/w23/textbook) link in the menu.
+We will be using Zybooks (as our textbook), Gradescope (for labs), Piazza (as our Q&A forum), and Canvas (for posting announcement, lecture notes & videos).
+
+The zybook for this course is required.  More information can be found at the [textbook](/w23/textbook) link in the menu.
 
 # What this course is about <a name="about"></a>
 
