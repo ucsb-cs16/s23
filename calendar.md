@@ -13,7 +13,7 @@ Each week corresponds to one Chapter in the zyBook.
 "Week 1" in zyBooks is effectively Chapter 1 and so on.
 
 We have the following course activities that need to be completed in zyBooks on a weekly basis: 
-* **PA**{: .label .label-orange }(Participation Activities) - due every Saturday 11:59pm, 
+* **PA**{: .label .label-orange }(Participation Activities) - due every Saturday at 11:59pm, 
 * **CA**{: .label .label-blue }(Challenge Activities) - due every Saturday at 11:59pm, 
 * **LA**{: .label .label-green }(Lab Activities) - due every Wednesday at 11:59pm.
 
