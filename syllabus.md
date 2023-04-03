@@ -191,6 +191,8 @@ be comfortable with all of the following:</p>
 
 ## Course policies <a name="policies"></a>
 
+# Late policy <a name="moreabout"></a>
+All deadlines are strict. Each person gets a 2 day extension which can be used once - so choose wisely. 
 
 # Course components <a name="moreabout"></a>
 
