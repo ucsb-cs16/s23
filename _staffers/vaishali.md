@@ -5,5 +5,5 @@ pronouns: she/her
 photo: vaishali_headshot.jpeg
 ---
 
-Vaishali Surianarayanan is the instructor for this course. She is a fourth year PhD candidate in the CS Theory Lab. 
+Vaishali Surianarayanan is a fourth year PhD candidate in the CS Theory Lab.  Her research involves designing algorithms for graph and geometry problems.
 She loves to teach. In her free time you can find her singing or painting.  
