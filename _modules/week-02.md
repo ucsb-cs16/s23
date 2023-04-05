@@ -8,7 +8,6 @@ Sun, Apr 9
 
 Mon, Apr 10
 : 12:30pm **Class**{: .label .label-purple }
-: **11:59pm**  ⏰  Due: **PA01**{: .label .label-orange }, **CA01**{: .label .label-blue }
 
 
 Tue, Apr 11
@@ -17,7 +16,7 @@ Tue, Apr 11
 
 Wed, Apr 12
 : 12:30pm **Class**{: .label .label-purple } 
-: **11:59pm**  ⏰  Due: **LA01**{: .label .label-green }
+: **11:59pm**  ⏰  Due: **LA01**{: .label .label-green }, **PA01**{: .label .label-orange }, **CA01**{: .label .label-blue }
 
 
 Thu, Apr 13
