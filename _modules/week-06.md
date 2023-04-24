@@ -7,7 +7,7 @@ Sun, May 7
 
 
 Mon, May 8
-: 12:30pm **Class**{: .label .label-purple }
+: 12:30pm **Midterm Exam**{: .label .label-red }
 
 
 Tue, May 9
