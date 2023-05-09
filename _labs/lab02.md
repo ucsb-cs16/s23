@@ -13,18 +13,14 @@ lecture_code_link: https://github.com/ucsb-cs16-w23/LECTURES/tree/main/02.16
 ## Collaboration policy
 This lab must be completed individually (and not with a pair partner).
 
-## Getting setup with VS Code
+## Getting setup with VS Code 
+-- (Updated on May 8)
 
 You have the option of continuing to work with vim or try a new editor (VS Code).
 
 Setting up VS Code for remote development is really useful because you can access your files on csil remotely through VS Code. It allows you to use a modern editor while working in the csil environment. 
 
-Use can use Samba to mount your CSIL directory so that it is accessible "as if" it were a hard
-drive connected to your computer.  That allows you to run VS Code on your own machine,
-but access the files on CSIL.  The articles below explain how, and have links to videos:
-
-* [Samba on Mac](https://ucsb-cs16.github.io/topics/CSIL/csil_mount_csil_drive_via_macos.html)
-* [Samba on Windows](https://ucsb-cs16.github.io/topics/CSIL/csil_mount_csil_drive_via_windows.html)
+Official Tutorial: [VS Code Remote SSH](https://code.visualstudio.com/learn/develop-cloud/ssh-lab-machines) (start from 0:47)
 
 You'll still need a terminal window on CSIL to run your code.  You can use the VS Code terminal
 windows, but I encourage you to try having a separate terminal window; it is nice to have a whole window for your terminal screen, instead of just the tiny little one built into VS Code.
