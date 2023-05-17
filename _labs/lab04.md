@@ -1,24 +1,29 @@
 ---
 num: lab04
 ready: true
-desc: "Array lists and dynamic arrays"
+desc: "Basic Classes in C++"
 assigned: 2023-02-23 13:00
 due: 2023-03-08 23:59
-prev_odds_and_primes_lab: lab02 
 ---
 
 # {{page.num}} - {{page.desc}}
 
 
-## Goals of this lab
+## Goals for this lab
 
-The goal of this lab is get more practice with iterating through arrays and dynamically allocating memory. Continue to practice code tracing to reason about your code. We request that you DO NOT ask the staff to debug your code. They have been specifically instructed not to debug for you, rather to guide in the process.
+By the time you have completed this lab, you should be able to
+
+* Add a new method to declaration of a simple C++ class
+* Add implementation of a new method to a simple C++ class definition
+* Test a simple C++ class implementation
+* Continue practicing with pre-written Makefiles
+
 
 # Step by Step Instructions
 
 ## Step 1: Getting Ready
 
-1. Go to github and find a repo for {{page.num}} assigned to your GitHub id.
+1. Go to github and find a repo for this lab assigned to your GitHub id.
 
 2. Log on to your CSIL account.
 
@@ -35,7 +40,7 @@ The starter code is in this repo:
 
 * <https://github.com/{{site.github_org}}/STARTER-{{page.num}}>
 
-The URL for cloning this repo is this: <tt>git@github.com:{{site.github_org}}/STARTER-{{page.num}}.git</tt>
+The URL for cloning this repo is this: `git@github.com:{{site.github_org}}/STARTER-{{page.num}}.git`
 
 Previous labs contain instruction for the process of:
 * Adding a `starter` remote for this repo
@@ -51,215 +56,100 @@ Once you've populated your repo, typing the `ls` command should show you the fol
 
 ```
 $ ls
-Makefile		arrayFuncs.h		moreArrayFuncs.h
-README.md		mafTest.cpp		tddFuncs.cpp
-arrayFuncs.cpp		moreArrayFuncs.cpp	tddFuncs.h
+Makefile	Rectangle.cpp	Rectangle.h	rugfit1.cpp	rugfit2.cpp
 $ 
 ```
 
 
-## Step 3: Reviewing the files and what your tasks are
 
-Here is a list of your tasks for this lab:
+## Step 3: Study a non-OO program
 
-### Step 3a: Familiarize yourself with the big picture
+In the rest of this lab, you will finish writing a C++ program that uses an object-oriented (OO) approach to solve exactly the same problems that are solved by rugfit1.cpp - but first study this program to understand the problems and their non-OO solutions:
 
-Type "make tests" and you will see some tests pass, but some fail.
+* After including the standard C++ input-output library, a utility function is defined for calculating the area of a rectangle. All other work is done inside the main function.
+* All variables are declared at the beginning of main.
+* The user is prompted to enter data, and the data are read into the appropriate variables.
+* Calculations are performed using the area function to help.
+* Results are printed.
 
-You are finished when all the tests pass.
-
-There is only one file that you need to edit this week: 
-
-* <code>moreArrayFuncs.cpp</code> contains more functions that deal with arrays. These are in addition to the `arrayFuncs.cpp` that you worked with before in {{ page.prev_odds_and_primes_lab }}.
-
-### Step 3b: Work on the array functions
-
-There are 9 functions you will need to write for this lab:
-
-* <code>indexOfMax</code>
-* <code>indexOfMin</code>
-* <code>largestValue</code>
-* <code>smallestValue</code>
-* <code>sum</code>
-* <code>copyElements</code>
-* <code>copyOddOnly</code>
-* <code>multiplyPairwise</code>
-* <code>createArray</code>
-
-Each one has a set of tests which can be found under its corresponding heading when you type <code>make tests</code>. For example, the indexOfMax tests look like this to start: 
+Here is a sample run of the program :
 
 ```
---------------INDEX_OF_MAX--------------
-   FAILED: indexOfMax(fiveThrees,5)
-     Expected: 0 Actual: -42
-   FAILED: indexOfMax(zeros,3)
-     Expected: 0 Actual: -42
-   FAILED: indexOfMax(primes,1)
-     Expected: 0 Actual: -42
-   FAILED: indexOfMax(primes,5)
-     Expected: 4 Actual: -42
-   FAILED: indexOfMax(primes,10)
-     Expected: 9 Actual: -42
-   FAILED: indexOfMax(meaning,1)
-     Expected: 0 Actual: -42
-   FAILED: indexOfMax(mix1,10)
-     Expected: 5 Actual: -42
-   FAILED: indexOfMax(mix2,10)
-     Expected: 5 Actual: -42
-   FAILED: indexOfMax(mix1,3)
-     Expected: 1 Actual: -42
-   FAILED: indexOfMax(mix2,3)
-     Expected: 1 Actual: -42
-   FAILED: indexOfMax(mix2,1)
-     Expected: 0 Actual: -42
-   FAILED: indexOfMax(mix2,5)
-     Expected: 4 Actual: -42
+-bash-4.3$ ./rugfit1
+enter width and length of floor: 10.5 15
+enter width and length of rug: 13.2 7.9
+floor area: 157.5
+rug area: 104.28
+leftover rug area: 0
+empty floor area: 53.22
 ```
 
-You should replace each function stub with the correct code for the function until all of the tests for each one pass. It is recommended that you work on the functions one at a time in the order that they are presented above. That is, get all the tests to pass for indexOfMax then indexOfMin and so on. When all the tests pass, move on to the next step. 
+Your revision of this program should operate exactly the same way. You will make the revision using the provided skeleton code in rugfit2.cpp
 
-## Step 4: Checking your work before submitting
+## Step 4: Know what it means to design an OO program
 
-When you are finished, you should be able to type  <code>make clean</code> and then <code>make tests</code> and see the following output:
+An experienced OO programmer would frown at the sight of variable names like `floorWidth` and `floorLength`, and would absolutely cringe at seeing names like `rugWidth` and `rugLength`. Such a programmer's object-oriented training would scream out the need for objects named `floor` and `rug` each of type `Rectangle` each with its own `width` and `length` attributes. 
 
+And although this programmer would appreciate the procedural abstraction of an `area` function, they would prefer to let the `floor` and `rug` objects calculate their own areas. In response, the OO programmer probably would decide to write a class that can represent either a floor or a rug, or any other rectangle for that matter. Then he would use objects of this class to solve problems - maybe even future problems the programmer is not facing yet.
+
+Here are the steps necessary to achieve such an object-oriented solution:
+
+* Write a class definition for class `Rectangle`. This definition includes declarations for private instance variables to store a width and a height, and declarations for public methods that can be used by programs that need Rectangle objects. This class is the abstraction (the ADT).  You can see such a definition in the file `Rectangle.h`; it lacks only an implementation of the `area` method.
+
+* Define (a.k.a. implement) the methods of class `Rectangle` that were only declared in the class definition. These method definitions use a special syntax that includes a "scope resolution operator" (::) to tie them to the Rectangle class. These methods implement the abstraction.  These can be found in the file `Rectangle.cpp` (again, except for the `area` method.)
+
+* Create and use `Rectangle` objects to solve problems, often just in a `main()` function. This `main()` function applies the abstraction.
+
+* Discuss the meaning of these steps with someone else in your discussion section, to make sure you both understand (at least generally) what you are to do, and hopefully gain an appreciation for why you might want to do it that way.
+
+## Step 5: Complete the OO solution
+
+First you should study the parts of 
+* (1) the abstraction, where class `Rectangle` is defined in `Rectangle.h`,
+* (2) the implementation, where the methods of class `Rectangle` are defined (a.k.a. implemented) in `Rectangle.cpp` 
+* (3) the application, where the main function is defined, and the abstraction and its implementation are used, in `rugfit2.cpp`
+
+Your job involves additions to each of these parts.
+
+(1) In `Rectangle.h`, i.e. the definition of class Rectangle: declare a function named area that will take no arguments and will return a double value. Make the function const - meaning it promises not to change the object on which it is called - just like the getWidth and getLength functions that are already declared in the skeleton.
+
+(2) In `Rectangle.cpp`, scroll past the existing definitions of the constructor and four standard get and set methods, and then define the `area` method you declared above. Look at the other method definitions as examples for how to do it - notice they use the scope resolution operator `::` to identify their connection to a particular class, as in `Rectangle::setLength` which identifies it as pertaining to class `Rectangle`. The `area` method should return the value of `length` times `width`.
+
+(3) In the `main()` function: prompt the user for the width and length of the rug, read those two values from the user, and then reset the width and length of the `Rectangle` object named rug with the user's dimensions (using the rug's `setWidth` and `setLength` methods, of course). As a reminder, you use the object's name, the dot operator, and the name of the method to do such things. For example, if we wanted to find the value of the floor's width, we could do so by using the getWidth method as follows:
+`floor.getWidth()`
+
+(4) Also in main: change the two assignment statements for `floorArea` and `rugArea` to use the `area` method for each of the floor and rug objects.
+
+## Step 6: Compile and run the program to test it
+
+Use make to compile your program. Then run it to make sure everything works.  Here is a test of our solution:
 
 ```
--bash-4.2$ make clean
-/bin/rm -f mafTest *.o
--bash-4.2$ make tests
-clang++ -Wall -Wno-uninitialized   -c -o mafTest.o mafTest.cpp
-clang++ -Wall -Wno-uninitialized   -c -o moreArrayFuncs.o moreArrayFuncs.cpp
-clang++ -Wall -Wno-uninitialized   -c -o tddFuncs.o tddFuncs.cpp
-clang++ -Wall -Wno-uninitialized   -c -o arrayFuncs.o arrayFuncs.cpp
-clang++ -Wall -Wno-uninitialized  mafTest.o moreArrayFuncs.o tddFuncs.o arrayFuncs.o -o mafTest
-./mafTest
---------------INITIALIZING--------------
-PASSED: arrayToString(fiveThrees,5)
-PASSED: arrayToString(zeros,3)
-PASSED: arrayToString(empty,0)
-PASSED: arrayToString(primes,5)
-PASSED: arrayToString(primes,10)
-PASSED: arrayToString(meaning,1)
-PASSED: arrayToString(mix1,10)
-PASSED: arrayToString(mix2,10)
-PASSED: arrayToString(descending,5)
---------------INDEX_OF_MAX--------------
-PASSED: indexOfMax(fiveThrees,5)
-PASSED: indexOfMax(zeros,3)
-PASSED: indexOfMax(primes,1)
-PASSED: indexOfMax(primes,5)
-PASSED: indexOfMax(primes,10)
-PASSED: indexOfMax(meaning,1)
-PASSED: indexOfMax(mix1,10)
-PASSED: indexOfMax(mix2,10)
-PASSED: indexOfMax(mix1,3)
-PASSED: indexOfMax(mix2,3)
-PASSED: indexOfMax(mix2,1)
-PASSED: indexOfMax(mix2,5)
---------------INDEX_OF_MIN--------------
-PASSED: indexOfMin(fiveThrees,5)
-PASSED: indexOfMin(zeros,3)
-PASSED: indexOfMin(primes,5)
-PASSED: indexOfMin(primes,10)
-PASSED: indexOfMin(meaning,1)
-PASSED: indexOfMin(mix1,10)
-PASSED: indexOfMin(mix2,10)
-PASSED: indexOfMin(mix1,3)
-PASSED: indexOfMin(mix2,3)
-PASSED: indexOfMin(descending,5)
-PASSED: indexOfMin(descending,1)
---------------LARGEST_VALUE--------------
-PASSED: largestValue(fiveThrees,5)
-PASSED: largestValue(zeros,3)
-PASSED: largestValue(primes,5)
-PASSED: largestValue(primes,10)
-PASSED: largestValue(meaning,1)
-PASSED: largestValue(mix1,10)
-PASSED: largestValue(mix2,10)
-PASSED: largestValue(mix1,3)
-PASSED: largestValue(mix2,3)
-PASSED: largestValue(descending,5)
-PASSED: largestValue(descending,1)
---------------SMALLEST_VALUE--------------
-PASSED: smallestValue(fiveThrees,5)
-PASSED: smallestValue(zeros,3)
-PASSED: smallestValue(primes,5)
-PASSED: smallestValue(primes,10)
-PASSED: smallestValue(meaning,1)
-PASSED: smallestValue(mix1,10)
-PASSED: smallestValue(mix2,10)
-PASSED: smallestValue(mix1,3)
-PASSED: smallestValue(mix2,3)
-PASSED: smallestValue(descending,5)
-PASSED: smallestValue(descending,1)
---------------SUM--------------
-PASSED: sum(fiveThrees,5)
-PASSED: sum(zeros,3)
-PASSED: sum(primes,5)
-PASSED: sum(primes,10)
-PASSED: sum(meaning,1)
-PASSED: sum(mix1,10)
-PASSED: sum(mix2,10)
-PASSED: sum(mix1,3)
-PASSED: sum(mix2,3)
-PASSED: sum(descending,5)
-PASSED: sum(descending,1)
---------------COPY_ELEMENTS--------------
-PASSED: arrayToString(primes,10)
-PASSED: arrayToString(mix1,10)
-PASSED: arrayToString(mix1,10)
-PASSED: arrayToString(mix2,10)
-PASSED: arrayToString(mix1,10)
-PASSED: arrayToString(mix2,10)
---------------COPY_ODD_ONLY--------------
-PASSED: copyOddOnly(a,descending,5)
-PASSED: arrayToString(descending,5)
-PASSED: arrayToString(a,3)
-PASSED: copyOddOnly(a,mix2,10)
-PASSED: arrayToString(mix2,10)
-PASSED: arrayToString(a,5)
---------------MULTIPLY_PAIRWISE--------------
-PASSED: arrayToString(fiveThrees,5)
-PASSED: arrayToString(descending,5)
-PASSED: arrayToString(a,5)
-PASSED: arrayToString(primes,5)
-PASSED: arrayToString(descending,5)
-PASSED: arrayToString(a,4)
-PASSED: arrayToString(primes,7)
-PASSED: arrayToString(a,7)
---------------CREATE_ARRAY--------------
-PASSED: arrayToString(oneElem, 1)
-PASSED: arrayToString(threeElems, 3)
-PASSED: arrayToString(fiveElems, 5)
-PASSED: arrayToString(oneElem, 1)
-PASSED: arrayToString(threeElems, 3)
-PASSED: arrayToString(fiveElems, 5)
--bash-4.2$
+-bash-4.3$ make rugfit2
+clang++ rugfit2.cpp -c
+clang++ Rectangle.cpp -c
+clang++ rugfit2.o Rectangle.o -o rugfit2
+-bash-4.3$ ./rugfit2
+enter width and length of floor: 10 11.5
+enter width and length of rug: 8 15
+floor area: 115
+rug area: 120
+leftover rug area: 5
+empty floor area: 0
 ```
 
-At that point, you are ready to try submitting on gradescope.
+If errors occur: read the error messages and try to figure out what needs changing. Don't just randomly make changes, but instead really think about the problem and how to fix it.
 
-## Step 5: Turn in your code on Gradescope
+## Step 7: Upload your code to github one last time
 
-Submit all the `.cpp` and `.h` files to this assignment on Gradescope via your github repo. Then visit Gradescope and check that you have a correct score.
+Hopefully you remembered to sync your local changes to github often as you were completing the assignment.
 
-* You must check that you have followed these style guidelines:
+If you forgot to do so, be sure to follow the steps in section 1d (above) to upload your final code to github
 
-1. Indentation is neat, consistent and follows good practice (see below)
-2. Variable name choice: variables should have sensible names.
-	More on indentation: Your code should be indented neatly. Code that is inside braces should be indented, and code that is at the same "level" of nesting inside braces should be indented in a consistent way. Follow the examples from lecture, the sample code, and from the textbook.   
-3. Practice the DRY (Don't Repeat Yourself) principle. Once you have finished implementing your code, try to find areas that are repetitive or redundant and spend some time to optimize. 
-4. Do not include any binaries (.o files or final executables).
 
-Commit and push the latest version of your code on github.
+## Step 8: Submit your code to gradescope
 
-**Graders will check your code to make sure it follows the coding style guidelines. Egregious violations to the coding style guidelines may be subject a score reduction for your lab grade.** If you are unsure whether your code exhibits good coding style, please ask a member of the course staff during lab.  
+Go to our class site on [www.gradescope.com](www.gradescope.com). Navigate to the assignment for this lab and submit your code via github.
 
-## An important word about academic honesty and the gradescope system
-
-We will test your code against other data files too&mdash;not just these.  So while you might be able to pass the tests on gradescope now by just doing a hard-coded "cout" of the expected output, that will NOT receive credit.    
-
-To be very clear, code like this will pass on gradescope, BUT REPRESENTS A FORM OF ACADEMIC DISHONESTY since it is an attempt to just "game the system", i.e. to get the tests to pass without really solving the problem.
-
-I would hope this would be obvious, but I have to say it so that there is no ambiguity: hard coding your output is a form of cheating, i.e. a form of "academic dishonesty". Submitting a program of this kind would be subject not only to a reduced grade, but to possible disciplinary penalties. If there is <em>any</em> doubt about this fact, please ask your TA and/or your instructor for clarification.
+You should see a score of 100/100 for this lab.
 
