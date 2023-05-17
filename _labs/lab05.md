@@ -118,8 +118,6 @@ Each one has a set of tests which can be found under its corresponding heading w
 
 You should replace each function stub with the correct code for the function until all of the tests for each one pass. It is recommended that you work on the functions one at a time in the order that they are presented above. That is, get all the tests to pass for indexOfMax then indexOfMin and so on. When all the tests pass, move on to the next step. 
 
-**You must implement each function iteratively. For this lab, you CANNOT implement the function with recursion. Any recursive implementations will not receive credit for this lab and be flagged for possible plagarism.** (Note: if you are unaware what a recursive implementation entails, do not worry, we have not covered this technique in class yet. This lab should be completed using only using the techniques we learned in class.)
-
 ## Step 4: Checking your work before submitting
 
 When you are finished, you should be able to type  <code>make clean</code> and then <code>make tests</code> and see the following output:
